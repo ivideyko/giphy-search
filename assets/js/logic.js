@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var searches = [];
 
-  $(document).on("click", ".btn", function() {
+  $("#search-buttons").on("click", ".btn", function() {
     $("#display-gifs").html("");
     var searchTerm = $(this).attr("data-search");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
@@ -28,7 +28,7 @@ $(document).ready(function(){
 
   $("#add-search").on("click", function(event){
     event.preventDefault();
-    console.log($("#search-input"));
+
     if ($("#search-input").val() != ""){
       var currentSearch = $("#search-input").val().trim();
 
@@ -41,7 +41,6 @@ $(document).ready(function(){
 
       searches.push(currentSearch); 
       $("#search-buttons").append(a);
-      console.log($("#search-input").val());
       $("#search-input").val("");
     }
   });
