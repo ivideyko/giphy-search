@@ -1,0 +1,17 @@
+.gif {
+  object-fit: none;
+  object-fit: center;
+  margin: 10px;
+  overflow: hidden;
+  width: 220px;
+  height: 220px;
+}
+
+.btn {
+  margin: 5px;
+}
+
+#search-buttons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

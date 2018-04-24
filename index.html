@@ -6,23 +6,31 @@
   <title>Giphy Search</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-  <div id="search-buttons">
-
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="search-buttons"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-9">
+        <div id="display-gifs"></div>
+      </div>
+      <div class="col-sm-3">
+        <form>
+          <div class="form-group">
+            <label for="search-input"><h2>Giphy Search</h2></label>
+            <input type="text" id="search-input"><br>
+          </div>
+          <button type="submit" id="add-search" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>  
   </div>
-
-  <form id="search-form">
-      <label for="search-input">Giphy Search</label>
-      <input type="text" id="search-input"><br>
-
-      <!-- Button triggers new movie to be added -->
-      <input id="add-search" type="submit" value="Giphy Search">
-    </form>
-
-  <div id="display-gifs"></div>
-
   <script src="assets/js/logic.js"></script>
 </body>
 </html>
